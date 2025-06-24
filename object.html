@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Object Handling</title>
+</head>
+<body>
+  <h1>Profile Summary</h1>
+  <p id="output"></p>
+
+  <script>
+    const person = {
+      name: "Vrushabh",
+      age: 19,
+      skills: ["JavaScript", "React", "Node.js"]
+    };
+
+    function displayProfile(obj) {
+      const skillsStr = obj.skills.join(", ");
+      return `Name: ${obj.name} | Skills: ${skillsStr}`;
+    }
+
+    document.getElementById("output").innerText = displayProfile(person);
+  </script>
+</body>
+</html>

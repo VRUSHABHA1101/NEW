@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Click Example</title>
+</head>
+<body>
+
+  <button id="myButton">Click Me</button>
+  <div id="output"></div>
+
+  <script>
+    // Get references to the button and div
+    const button = document.getElementById("myButton");
+    const outputDiv = document.getElementById("output");
+
+    // Add click event listener to the button
+    button.addEventListener("click", function() {
+      outputDiv.innerText = "Button clicked!";
+    });
+  </script>
+
+</body>
+</html>

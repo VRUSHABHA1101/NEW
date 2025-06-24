@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Manipulation</title>
+</head>
+<body>
+  <h1>Double the Numbers</h1>
+  <p>Original array: <span id="original"></span></p>
+  <p>Doubled array: <span id="doubled"></span></p>
+
+  <script>
+    const numbers = [2, 5, 8, 10];
+    const doubled = numbers.map(num => num * 2);
+
+    document.getElementById("original").innerText = numbers.join(", ");
+    document.getElementById("doubled").innerText = doubled.join(", ");
+  </script>
+</body>
+</html>
